@@ -40,3 +40,8 @@ for arg in ${*}; do
     fi
 done
 
+for arg in ${*}; do
+    if [[ $arg == '__verbose__' ]]; then
+        set -v;
+    fi
+done
