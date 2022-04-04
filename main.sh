@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # bash script mode
-set -euo pipefail
+set -Eeuo pipefail
 # debug mode
 # set -x
 

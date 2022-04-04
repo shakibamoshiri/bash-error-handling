@@ -6,6 +6,7 @@ This builtin is so complicated that it deserves its own section. set allows you 
 
 Here we are going to use these options:
  - `-e` Exit immediately on failure
+ - `-E` If set, any trap on ERR is inherited by shell functions
  - `-u` Exit when there is an unbound variable
  - `-o` Give a option-name to set
    - pipefail The return values of last (rightmost) command (exit code)
