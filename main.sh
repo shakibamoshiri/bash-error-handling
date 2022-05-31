@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # bash script mode
-set -euo pipefail
-# debug mode
-# set -x
+set -T # inherit DEBUG and RETURN trap for functions
+set -C # prevent file overwrite by > &> <>
+set -E # inherit -e
+set -e # exit immediately on errors
+set -u # exit on not assigned variables
+set -o pipefail # exit on pipe failure
+# set -x # enable debug mode
 
 function __error_handing__(){
     local last_status_code=$1;
